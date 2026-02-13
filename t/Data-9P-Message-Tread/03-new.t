@@ -4,7 +4,7 @@ use warnings;
 use Data::9P::Message::Tread;
 use English;
 use Error::Pure::Utils qw(clean);
-use Test::More 'tests' => 13;
+use Test::More 'tests' => 10;
 use Test::NoWarnings;
 
 # Test.
@@ -12,7 +12,6 @@ my $obj = Data::9P::Message::Tread->new(
 	'count' => 100,
 	'fid' => 200,
 	'offset' => 300,
-	'tag' => 10,
 );
 isa_ok($obj, 'Data::9P::Message::Tread');
 
@@ -21,7 +20,6 @@ eval {
 	Data::9P::Message::Tread->new(
 		'fid' => 200,
 		'offset' => 300,
-		'tag' => 10,
 	);
 };
 is($EVAL_ERROR, "Parameter 'count' is required.\n",
@@ -34,7 +32,6 @@ eval {
 		'count' => 4294967296,
 		'fid' => 200,
 		'offset' => 300,
-		'tag' => 10,
 	);
 };
 is($EVAL_ERROR, "Parameter 'count' must be a natural number between 0 and 4294967295.\n",
@@ -47,7 +44,6 @@ eval {
 		'count' => 'bad',
 		'fid' => 200,
 		'offset' => 300,
-		'tag' => 10,
 	);
 };
 is($EVAL_ERROR, "Parameter 'count' must be a natural number.\n",
@@ -59,7 +55,6 @@ eval {
 	Data::9P::Message::Tread->new(
 		'count' => 100,
 		'offset' => 300,
-		'tag' => 10,
 	);
 };
 is($EVAL_ERROR, "Parameter 'fid' is required.\n",
@@ -72,7 +67,6 @@ eval {
 		'count' => 100,
 		'fid' => 4294967296,
 		'offset' => 300,
-		'tag' => 10,
 	);
 };
 is($EVAL_ERROR, "Parameter 'fid' must be a natural number between 0 and 4294967295.\n",
@@ -85,7 +79,6 @@ eval {
 		'count' => 100,
 		'fid' => 'bad',
 		'offset' => 300,
-		'tag' => 10,
 	);
 };
 is($EVAL_ERROR, "Parameter 'fid' must be a natural number.\n",
@@ -97,7 +90,6 @@ eval {
 	Data::9P::Message::Tread->new(
 		'count' => 100,
 		'fid' => 200,
-		'tag' => 10,
 	);
 };
 is($EVAL_ERROR, "Parameter 'offset' is required.\n",
@@ -111,7 +103,6 @@ clean();
 #		'count' => 100,
 #		'fid' => 200,
 #		'offset' => 18446744073709551616,
-#		'tag' => 10,
 #	);
 #};
 #is($EVAL_ERROR, "Parameter 'offset' must be a natural number between 0 and 18446744073709551615.\n",
@@ -124,47 +115,8 @@ eval {
 		'count' => 100,
 		'fid' => 200,
 		'offset' => 'bad',
-		'tag' => 10,
 	);
 };
 is($EVAL_ERROR, "Parameter 'offset' must be a natural number.\n",
 	"Parameter 'offset' must be a natural number (bad).");
-clean();
-
-# Test.
-eval {
-	Data::9P::Message::Tread->new(
-		'count' => 100,
-		'fid' => 200,
-		'offset' => 300,
-	);
-};
-is($EVAL_ERROR, "Parameter 'tag' is required.\n",
-	"Parameter 'tag' is required.");
-clean();
-
-# Test.
-eval {
-	Data::9P::Message::Tread->new(
-		'count' => 100,
-		'fid' => 200,
-		'offset' => 300,
-		'tag' => 'bad',
-	);
-};
-is($EVAL_ERROR, "Parameter 'tag' must be a natural number.\n",
-	"Parameter 'tag' must be a natural number (bad).");
-clean();
-
-# Test.
-eval {
-	Data::9P::Message::Tread->new(
-		'count' => 100,
-		'fid' => 200,
-		'offset' => 300,
-		'tag' => 65536,
-	);
-};
-is($EVAL_ERROR, "Parameter 'tag' must be a natural number between 0 and 65535.\n",
-	"Parameter 'tag' must be a natural number between 0 and 65535 (65536).");
 clean();

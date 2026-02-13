@@ -4,13 +4,12 @@ use warnings;
 use Data::9P::Message::Rversion;
 use English;
 use Error::Pure::Utils qw(clean);
-use Test::More 'tests' => 9;
+use Test::More 'tests' => 6;
 use Test::NoWarnings;
 
 # Test.
 my $obj = Data::9P::Message::Rversion->new(
 	'msize' => 100,
-	'tag' => 10,
 	'version' => '2.1.1',
 );
 isa_ok($obj, 'Data::9P::Message::Rversion');
@@ -18,7 +17,6 @@ isa_ok($obj, 'Data::9P::Message::Rversion');
 # Test.
 eval {
 	Data::9P::Message::Rversion->new(
-		'tag' => 10,
 		'version' => '2.1.1',
 	);
 };
@@ -29,7 +27,6 @@ clean();
 # Test.
 eval {
 	Data::9P::Message::Rversion->new(
-		'tag' => 10,
 		'msize' => 4294967296,
 		'version' => '2.1.1',
 	);
@@ -41,7 +38,6 @@ clean();
 # Test.
 eval {
 	Data::9P::Message::Rversion->new(
-		'tag' => 10,
 		'msize' => 'bad',
 		'version' => '2.1.1',
 	);
@@ -54,42 +50,6 @@ clean();
 eval {
 	Data::9P::Message::Rversion->new(
 		'msize' => 100,
-		'version' => '2.1.1',
-	);
-};
-is($EVAL_ERROR, "Parameter 'tag' is required.\n",
-	"Parameter 'tag' is required.");
-clean();
-
-# Test.
-eval {
-	Data::9P::Message::Rversion->new(
-		'msize' => 100,
-		'tag' => 'bad',
-		'version' => '2.1.1',
-	);
-};
-is($EVAL_ERROR, "Parameter 'tag' must be a natural number.\n",
-	"Parameter 'tag' must be a natural number (bad).");
-clean();
-
-# Test.
-eval {
-	Data::9P::Message::Rversion->new(
-		'msize' => 100,
-		'tag' => 65536,
-		'version' => '2.1.1',
-	);
-};
-is($EVAL_ERROR, "Parameter 'tag' must be a natural number between 0 and 65535.\n",
-	"Parameter 'tag' must be a natural number between 0 and 65535 (65536).");
-clean();
-
-# Test.
-eval {
-	Data::9P::Message::Rversion->new(
-		'msize' => 100,
-		'tag' => 10,
 	);
 };
 is($EVAL_ERROR, "Parameter 'version' is required.\n",

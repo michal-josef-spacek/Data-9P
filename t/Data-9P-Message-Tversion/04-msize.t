@@ -8,7 +8,6 @@ use Test::NoWarnings;
 # Test.
 my $obj = Data::9P::Message::Tversion->new(
 	'msize' => 100,
-	'tag' => 10,
 	'version' => '2.1.1',
 );
 my $ret = $obj->msize;

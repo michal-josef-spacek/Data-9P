@@ -8,8 +8,7 @@ use Test::NoWarnings;
 # Test.
 my $obj = Data::9P::Message::Tversion->new(
 	'msize' => 100,
-	'tag' => 10,
 	'version' => '2.1.1',
 );
-my $ret = $obj->tag;
-is($ret, 10, 'Get tag (10).');
+my $ret = $obj->version;
+is($ret, '2.1.1', 'Get version (2.1.1).');

@@ -10,7 +10,6 @@ my $obj = Data::9P::Message::Tread->new(
 	'count' => 100,
 	'fid' => 200,
 	'offset' => 300,
-	'tag' => 10,
 );
 my $ret = $obj->offset;
 is($ret, 300, 'Get offset (300).');
