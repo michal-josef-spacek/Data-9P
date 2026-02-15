@@ -3,7 +3,7 @@ package Data::9P::Message::Tauth;
 use strict;
 use warnings;
 
-use Data::9P::Const qw(NOFID);
+use Data::9P::Const qw($NOFID);
 use Error::Pure qw(err);
 use Mo qw(build is);
 use Mo::utils qw(check_required);
@@ -31,7 +31,7 @@ sub BUILD {
 	# Check 'afid'.
 	check_required($self, 'afid');
 	check_natural_range($self, 'afid', 0, 4294967295);
-	if ($afid == $NOFID) {
+	if ($self->{'afid'} == $NOFID) {
 		err "Parameter 'afid' couldn't contain 0xFFFFFFFF value.";
 	}
 
