@@ -53,6 +53,7 @@ t/Data-9P-Message-Rattach/03-new.t
 t/Data-9P-Message-Rattach/04-qid.t
 t/Data-9P-Message-Rclunk/01-use.t
 t/Data-9P-Message-Rclunk/02-version.t
+t/Data-9P-Message-Rclunk/03-new.t
 t/Data-9P-Message-Rcreate/01-use.t
 t/Data-9P-Message-Rcreate/02-version.t
 t/Data-9P-Message-Rcreate/03-new.t
@@ -64,12 +65,14 @@ t/Data-9P-Message-Rerror/03-new.t
 t/Data-9P-Message-Rerror/04-ename.t
 t/Data-9P-Message-Rflush/01-use.t
 t/Data-9P-Message-Rflush/02-version.t
+t/Data-9P-Message-Rflush/03-new.t
 t/Data-9P-Message-Ropen/01-use.t
 t/Data-9P-Message-Ropen/02-version.t
 t/Data-9P-Message-Rread/01-use.t
 t/Data-9P-Message-Rread/02-version.t
 t/Data-9P-Message-Rremove/01-use.t
 t/Data-9P-Message-Rremove/02-version.t
+t/Data-9P-Message-Rremove/03-new.t
 t/Data-9P-Message-Rstat/01-use.t
 t/Data-9P-Message-Rstat/02-version.t
 t/Data-9P-Message-Rversion/01-use.t
