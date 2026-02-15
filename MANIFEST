@@ -45,6 +45,9 @@ t/Data-9P-Message-Rattach/03-new.t
 t/Data-9P-Message-Rattach/04-qid.t
 t/Data-9P-Message-Rcreate/01-use.t
 t/Data-9P-Message-Rcreate/02-version.t
+t/Data-9P-Message-Rcreate/03-new.t
+t/Data-9P-Message-Rcreate/04-iounit.t
+t/Data-9P-Message-Rcreate/05-qid.t
 t/Data-9P-Message-Rerror/01-use.t
 t/Data-9P-Message-Rerror/02-version.t
 t/Data-9P-Message-Rerror/03-new.t
