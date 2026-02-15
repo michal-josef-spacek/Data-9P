@@ -64,6 +64,11 @@ t/Data-9P-Message-Rwalk/01-use.t
 t/Data-9P-Message-Rwalk/02-version.t
 t/Data-9P-Message-Tcreate/01-use.t
 t/Data-9P-Message-Tcreate/02-version.t
+t/Data-9P-Message-Tcreate/03-new.t
+t/Data-9P-Message-Tcreate/04-fid.t
+t/Data-9P-Message-Tcreate/05-mode.t
+t/Data-9P-Message-Tcreate/06-name.t
+t/Data-9P-Message-Tcreate/07-perm.t
 t/Data-9P-Message-Topen/01-use.t
 t/Data-9P-Message-Topen/02-version.t
 t/Data-9P-Message-Topen/03-new.t
