@@ -1,9 +1,13 @@
 use strict;
 use warnings;
 
-use Data::9P::Const qw($QTDIR $QTAPPEND $QTEXCL $QTMOUNT $QTAUTH $QTTMP $QTSYMLINK $QTFILE);
+use Data::9P::Const qw(
+	$QTDIR $QTAPPEND $QTEXCL $QTMOUNT $QTAUTH $QTTMP $QTSYMLINK $QTFILE
+);
 use Test::More 'tests' => 9;
 use Test::NoWarnings;
+
+# TODO Constant tests.
 
 # Test.
 is($QTDIR, 0x80, 'Constant $QTDIR (0x80).');
