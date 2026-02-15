@@ -3,7 +3,7 @@ use warnings;
 
 use Data::9P::Const qw($OREAD $OTRUNC);
 use Data::9P::Message::Topen;
-use Test::More 'tests' => 4;
+use Test::More 'tests' => 2;
 use Test::NoWarnings;
 
 # Test.
