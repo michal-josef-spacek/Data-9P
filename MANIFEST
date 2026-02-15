@@ -73,6 +73,10 @@ t/Data-9P-Message/02-version.t
 t/Data-9P-Message/03-new.t
 t/Data-9P-Qid/01-use.t
 t/Data-9P-Qid/02-version.t
+t/Data-9P-Qid/03-new.t
+t/Data-9P-Qid/04-path.t
+t/Data-9P-Qid/05-type.t
+t/Data-9P-Qid/06-version.t
 t/Data-9P-Stat/01-use.t
 t/Data-9P-Stat/02-version.t
 t/Data-9P/01-use.t
