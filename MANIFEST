@@ -2,6 +2,7 @@
 9P/Const.pm
 9P/Message.pm
 9P/Message/Rattach.pm
+9P/Message/Rclunk.pm
 9P/Message/Rcreate.pm
 9P/Message/Rerror.pm
 9P/Message/Ropen.pm
@@ -9,6 +10,9 @@
 9P/Message/Rstat.pm
 9P/Message/Rversion.pm
 9P/Message/Rwalk.pm
+9P/Message/Rwrite.pm
+9P/Message/Tattach.pm
+9P/Message/Tclunk.pm
 9P/Message/Tcreate.pm
 9P/Message/Topen.pm
 9P/Message/Tread.pm
@@ -43,6 +47,8 @@ t/Data-9P-Message-Rattach/01-use.t
 t/Data-9P-Message-Rattach/02-version.t
 t/Data-9P-Message-Rattach/03-new.t
 t/Data-9P-Message-Rattach/04-qid.t
+t/Data-9P-Message-Rclunk/01-use.t
+t/Data-9P-Message-Rclunk/02-version.t
 t/Data-9P-Message-Rcreate/01-use.t
 t/Data-9P-Message-Rcreate/02-version.t
 t/Data-9P-Message-Rcreate/03-new.t
@@ -65,6 +71,12 @@ t/Data-9P-Message-Rversion/04-msize.t
 t/Data-9P-Message-Rversion/05-version.t
 t/Data-9P-Message-Rwalk/01-use.t
 t/Data-9P-Message-Rwalk/02-version.t
+t/Data-9P-Message-Rwrite/01-use.t
+t/Data-9P-Message-Rwrite/02-version.t
+t/Data-9P-Message-Tattach/01-use.t
+t/Data-9P-Message-Tattach/02-version.t
+t/Data-9P-Message-Tclunk/01-use.t
+t/Data-9P-Message-Tclunk/02-version.t
 t/Data-9P-Message-Tcreate/01-use.t
 t/Data-9P-Message-Tcreate/02-version.t
 t/Data-9P-Message-Tcreate/03-new.t
@@ -111,6 +123,8 @@ xt/Data-9P-Const/01-pod_coverage.t
 xt/Data-9P-Const/02-pod.t
 xt/Data-9P-Message-Rattach/01-pod_coverage.t
 xt/Data-9P-Message-Rattach/02-pod.t
+xt/Data-9P-Message-Rclunk/01-pod_coverage.t
+xt/Data-9P-Message-Rclunk/02-pod.t
 xt/Data-9P-Message-Rcreate/01-pod_coverage.t
 xt/Data-9P-Message-Rcreate/02-pod.t
 xt/Data-9P-Message-Rerror/01-pod_coverage.t
@@ -125,6 +139,12 @@ xt/Data-9P-Message-Rversion/01-pod_coverage.t
 xt/Data-9P-Message-Rversion/02-pod.t
 xt/Data-9P-Message-Rwalk/01-pod_coverage.t
 xt/Data-9P-Message-Rwalk/02-pod.t
+xt/Data-9P-Message-Rwrite/01-pod_coverage.t
+xt/Data-9P-Message-Rwrite/02-pod.t
+xt/Data-9P-Message-Tattach/01-pod_coverage.t
+xt/Data-9P-Message-Tattach/02-pod.t
+xt/Data-9P-Message-Tclunk/01-pod_coverage.t
+xt/Data-9P-Message-Tclunk/02-pod.t
 xt/Data-9P-Message-Tcreate/01-pod_coverage.t
 xt/Data-9P-Message-Tcreate/02-pod.t
 xt/Data-9P-Message-Topen/01-pod_coverage.t
