@@ -66,6 +66,9 @@ t/Data-9P-Message-Tcreate/01-use.t
 t/Data-9P-Message-Tcreate/02-version.t
 t/Data-9P-Message-Topen/01-use.t
 t/Data-9P-Message-Topen/02-version.t
+t/Data-9P-Message-Topen/03-new.t
+t/Data-9P-Message-Topen/04-fid.t
+t/Data-9P-Message-Topen/05-mode.t
 t/Data-9P-Message-Tread/01-use.t
 t/Data-9P-Message-Tread/02-version.t
 t/Data-9P-Message-Tread/03-new.t
