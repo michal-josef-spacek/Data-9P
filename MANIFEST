@@ -2,6 +2,7 @@
 9P/Const.pm
 9P/Message.pm
 9P/Message/Rattach.pm
+9P/Message/Rauth.pm
 9P/Message/Rclunk.pm
 9P/Message/Rcreate.pm
 9P/Message/Rerror.pm
@@ -14,6 +15,7 @@
 9P/Message/Rwalk.pm
 9P/Message/Rwrite.pm
 9P/Message/Tattach.pm
+9P/Message/Tauth.pm
 9P/Message/Tclunk.pm
 9P/Message/Tcreate.pm
 9P/Message/Tflush.pm
@@ -51,6 +53,8 @@ t/Data-9P-Message-Rattach/01-use.t
 t/Data-9P-Message-Rattach/02-version.t
 t/Data-9P-Message-Rattach/03-new.t
 t/Data-9P-Message-Rattach/04-qid.t
+t/Data-9P-Message-Rauth/01-use.t
+t/Data-9P-Message-Rauth/02-version.t
 t/Data-9P-Message-Rclunk/01-use.t
 t/Data-9P-Message-Rclunk/02-version.t
 t/Data-9P-Message-Rclunk/03-new.t
@@ -86,6 +90,8 @@ t/Data-9P-Message-Rwrite/01-use.t
 t/Data-9P-Message-Rwrite/02-version.t
 t/Data-9P-Message-Tattach/01-use.t
 t/Data-9P-Message-Tattach/02-version.t
+t/Data-9P-Message-Tauth/01-use.t
+t/Data-9P-Message-Tauth/02-version.t
 t/Data-9P-Message-Tclunk/01-use.t
 t/Data-9P-Message-Tclunk/02-version.t
 t/Data-9P-Message-Tcreate/01-use.t
@@ -138,6 +144,8 @@ xt/Data-9P-Const/01-pod_coverage.t
 xt/Data-9P-Const/02-pod.t
 xt/Data-9P-Message-Rattach/01-pod_coverage.t
 xt/Data-9P-Message-Rattach/02-pod.t
+xt/Data-9P-Message-Rauth/01-pod_coverage.t
+xt/Data-9P-Message-Rauth/02-pod.t
 xt/Data-9P-Message-Rclunk/01-pod_coverage.t
 xt/Data-9P-Message-Rclunk/02-pod.t
 xt/Data-9P-Message-Rcreate/01-pod_coverage.t
@@ -162,6 +170,8 @@ xt/Data-9P-Message-Rwrite/01-pod_coverage.t
 xt/Data-9P-Message-Rwrite/02-pod.t
 xt/Data-9P-Message-Tattach/01-pod_coverage.t
 xt/Data-9P-Message-Tattach/02-pod.t
+xt/Data-9P-Message-Tauth/01-pod_coverage.t
+xt/Data-9P-Message-Tauth/02-pod.t
 xt/Data-9P-Message-Tclunk/01-pod_coverage.t
 xt/Data-9P-Message-Tclunk/02-pod.t
 xt/Data-9P-Message-Tcreate/01-pod_coverage.t
