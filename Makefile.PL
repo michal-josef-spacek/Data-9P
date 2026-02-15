@@ -5,7 +5,7 @@ use warnings;
 use inc::Module::Install;
 
 # Definition.
-abstract 'Data object for 9 protocol.';
+abstract 'Data objects for 9 protocol.';
 author 'Michal Josef Spacek <skim@cpan.org>';
 author_requires 'English' => 0;
 author_requires 'File::Object' => 0;

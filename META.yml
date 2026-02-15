@@ -1,5 +1,5 @@
 ---
-abstract: 'Data object for 9 protocol.'
+abstract: 'Data objects for 9 protocol.'
 author:
   - 'Michal Josef Spacek <skim@cpan.org>'
 build_requires:
