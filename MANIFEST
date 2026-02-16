@@ -81,6 +81,8 @@ t/Data-9P-Message-Ropen/04-iounit.t
 t/Data-9P-Message-Ropen/05-qid.t
 t/Data-9P-Message-Rread/01-use.t
 t/Data-9P-Message-Rread/02-version.t
+t/Data-9P-Message-Rread/03-new.t
+t/Data-9P-Message-Rread/04-data.t
 t/Data-9P-Message-Rremove/01-use.t
 t/Data-9P-Message-Rremove/02-version.t
 t/Data-9P-Message-Rremove/03-new.t
