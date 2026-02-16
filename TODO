@@ -2,10 +2,11 @@ TODO
 ====
 1. unit8, 16, 32, 64 predelat na nejake jednodussi checky.
 2. Doc
-3. Tests.
 4. Fix checks.
 5. Fix issue with exponential representation of number. XXX in code.
 6.
 
 Applied
 =======
+3. Tests.
+OK [20260216] skim
