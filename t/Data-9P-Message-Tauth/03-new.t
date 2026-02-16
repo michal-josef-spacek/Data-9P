@@ -1,10 +1,11 @@
 use strict;
 use warnings;
 
+use Data::9P::Const qw($NOFID);
 use Data::9P::Message::Tauth;
 use English;
 use Error::Pure::Utils qw(clean);
-use Test::More 'tests' => 5;
+use Test::More 'tests' => 6;
 use Test::NoWarnings;
 
 # Test.
@@ -24,6 +25,18 @@ eval {
 };
 is($EVAL_ERROR, "Parameter 'afid' is required.\n",
 	"Parameter 'afid' is required.");
+clean();
+
+# Test.
+eval {
+	Data::9P::Message::Tauth->new(
+		'afid' => $NOFID,
+		'aname' => '',
+		'uname' => 'nobody',
+	);
+};
+is($EVAL_ERROR, "Parameter 'afid' couldn't contain 0xFFFFFFFF value.\n",
+	"Parameter 'afid' couldn't contain 0xFFFFFFFF value.");
 clean();
 
 # Test.
