@@ -83,6 +83,8 @@ t/Data-9P-Message-Rremove/02-version.t
 t/Data-9P-Message-Rremove/03-new.t
 t/Data-9P-Message-Rstat/01-use.t
 t/Data-9P-Message-Rstat/02-version.t
+t/Data-9P-Message-Rstat/03-new.t
+t/Data-9P-Message-Rstat/04-stat.t
 t/Data-9P-Message-Rversion/01-use.t
 t/Data-9P-Message-Rversion/02-version.t
 t/Data-9P-Message-Rversion/03-new.t
@@ -151,6 +153,18 @@ t/Data-9P-Qid/05-type.t
 t/Data-9P-Qid/06-version.t
 t/Data-9P-Stat/01-use.t
 t/Data-9P-Stat/02-version.t
+t/Data-9P-Stat/03-new.t
+t/Data-9P-Stat/04-atime.t
+t/Data-9P-Stat/05-dev.t
+t/Data-9P-Stat/06-gid.t
+t/Data-9P-Stat/07-length.t
+t/Data-9P-Stat/08-mode.t
+t/Data-9P-Stat/09-mtime.t
+t/Data-9P-Stat/10-muid.t
+t/Data-9P-Stat/11-name.t
+t/Data-9P-Stat/12-qid.t
+t/Data-9P-Stat/13-type.t
+t/Data-9P-Stat/14-uid.t
 t/Data-9P/01-use.t
 t/Data-9P/02-version.t
 xt/Data-9P-Const/01-pod_coverage.t
