@@ -141,6 +141,10 @@ t/Data-9P-Message-Tversion/04-msize.t
 t/Data-9P-Message-Tversion/05-version.t
 t/Data-9P-Message-Twalk/01-use.t
 t/Data-9P-Message-Twalk/02-version.t
+t/Data-9P-Message-Twalk/03-new.t
+t/Data-9P-Message-Twalk/04-fid.t
+t/Data-9P-Message-Twalk/05-newfid.t
+t/Data-9P-Message-Twalk/06-wnames.t
 t/Data-9P-Message-Twrite/01-use.t
 t/Data-9P-Message-Twrite/02-version.t
 t/Data-9P-Message-Twrite/03-new.t
