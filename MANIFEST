@@ -110,6 +110,8 @@ t/Data-9P-Message-Tauth/05-aname.t
 t/Data-9P-Message-Tauth/06-uname.t
 t/Data-9P-Message-Tclunk/01-use.t
 t/Data-9P-Message-Tclunk/02-version.t
+t/Data-9P-Message-Tclunk/03-new.t
+t/Data-9P-Message-Tclunk/04-fid.t
 t/Data-9P-Message-Tcreate/01-use.t
 t/Data-9P-Message-Tcreate/02-version.t
 t/Data-9P-Message-Tcreate/03-new.t
