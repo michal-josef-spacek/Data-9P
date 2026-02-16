@@ -95,6 +95,8 @@ t/Data-9P-Message-Rversion/04-msize.t
 t/Data-9P-Message-Rversion/05-version.t
 t/Data-9P-Message-Rwalk/01-use.t
 t/Data-9P-Message-Rwalk/02-version.t
+t/Data-9P-Message-Rwalk/03-new.t
+t/Data-9P-Message-Rwalk/04-wqid.t
 t/Data-9P-Message-Rwrite/01-use.t
 t/Data-9P-Message-Rwrite/02-version.t
 t/Data-9P-Message-Rwrite/03-new.t
