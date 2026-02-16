@@ -119,6 +119,8 @@ t/Data-9P-Message-Tcreate/06-name.t
 t/Data-9P-Message-Tcreate/07-perm.t
 t/Data-9P-Message-Tflush/01-use.t
 t/Data-9P-Message-Tflush/02-version.t
+t/Data-9P-Message-Tflush/03-new.t
+t/Data-9P-Message-Tflush/04-oldtag.t
 t/Data-9P-Message-Topen/01-use.t
 t/Data-9P-Message-Topen/02-version.t
 t/Data-9P-Message-Topen/03-new.t
