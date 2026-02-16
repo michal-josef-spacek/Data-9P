@@ -145,6 +145,9 @@ t/Data-9P-Message-Twrite/01-use.t
 t/Data-9P-Message-Twrite/02-version.t
 t/Data-9P-Message-Twstat/01-use.t
 t/Data-9P-Message-Twstat/02-version.t
+t/Data-9P-Message-Twstat/03-new.t
+t/Data-9P-Message-Twstat/04-fid.t
+t/Data-9P-Message-Twstat/05-stat.t
 t/Data-9P-Message/01-use.t
 t/Data-9P-Message/02-version.t
 t/Data-9P-Message/03-new.t
