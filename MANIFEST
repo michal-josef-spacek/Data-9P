@@ -134,6 +134,8 @@ t/Data-9P-Message-Tremove/01-use.t
 t/Data-9P-Message-Tremove/02-version.t
 t/Data-9P-Message-Tstat/01-use.t
 t/Data-9P-Message-Tstat/02-version.t
+t/Data-9P-Message-Tstat/03-new.t
+t/Data-9P-Message-Tstat/04-fid.t
 t/Data-9P-Message-Tversion/01-use.t
 t/Data-9P-Message-Tversion/02-version.t
 t/Data-9P-Message-Tversion/03-new.t
