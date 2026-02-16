@@ -143,6 +143,10 @@ t/Data-9P-Message-Twalk/01-use.t
 t/Data-9P-Message-Twalk/02-version.t
 t/Data-9P-Message-Twrite/01-use.t
 t/Data-9P-Message-Twrite/02-version.t
+t/Data-9P-Message-Twrite/03-new.t
+t/Data-9P-Message-Twrite/04-data.t
+t/Data-9P-Message-Twrite/05-fid.t
+t/Data-9P-Message-Twrite/06-offset.t
 t/Data-9P-Message-Twstat/01-use.t
 t/Data-9P-Message-Twstat/02-version.t
 t/Data-9P-Message-Twstat/03-new.t
