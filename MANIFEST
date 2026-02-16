@@ -102,6 +102,11 @@ t/Data-9P-Message-Rwstat/02-version.t
 t/Data-9P-Message-Rwstat/03-new.t
 t/Data-9P-Message-Tattach/01-use.t
 t/Data-9P-Message-Tattach/02-version.t
+t/Data-9P-Message-Tattach/03-new.t
+t/Data-9P-Message-Tattach/04-afid.t
+t/Data-9P-Message-Tattach/05-aname.t
+t/Data-9P-Message-Tattach/06-fid.t
+t/Data-9P-Message-Tattach/07-uname.t
 t/Data-9P-Message-Tauth/01-use.t
 t/Data-9P-Message-Tauth/02-version.t
 t/Data-9P-Message-Tauth/03-new.t
