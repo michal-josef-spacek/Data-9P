@@ -2,8 +2,8 @@ use strict;
 use warnings;
 
 use Data::9P::Message::Rstat;
-use Data::9P::Stat;
 use Data::9P::Qid;
+use Data::9P::Stat;
 use English;
 use Error::Pure::Utils qw(clean);
 use Test::More 'tests' => 3;
