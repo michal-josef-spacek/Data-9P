@@ -57,6 +57,8 @@ t/Data-9P-Message-Rattach/03-new.t
 t/Data-9P-Message-Rattach/04-qid.t
 t/Data-9P-Message-Rauth/01-use.t
 t/Data-9P-Message-Rauth/02-version.t
+t/Data-9P-Message-Rauth/03-new.t
+t/Data-9P-Message-Rauth/04-aqid.t
 t/Data-9P-Message-Rclunk/01-use.t
 t/Data-9P-Message-Rclunk/02-version.t
 t/Data-9P-Message-Rclunk/03-new.t
