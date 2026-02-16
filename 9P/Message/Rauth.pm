@@ -10,16 +10,16 @@ extends 'Data::9P::Message';
 
 our $VERSION = 0.01;
 
-has qid => (
+has aqid => (
 	is => 'ro',
 );
 
 sub BUILD {
 	my $self = shift;
 
-	# Check 'qid'.
-	check_required($self, 'qid');
-	check_isa($self, 'qid', 'Data::9P::Qid');
+	# Check 'aqid'.
+	check_required($self, 'aqid');
+	check_isa($self, 'aqid', 'Data::9P::Qid');
 
 	return;
 }
