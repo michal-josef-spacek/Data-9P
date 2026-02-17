@@ -5,7 +5,7 @@ use warnings;
 
 use Mo qw(build is);
 use Mo::utils qw(check_required);
-use Mo::utils::Number::Range 0.03 qw(check_natural_range);
+use Mo::utils::Number::Alias 0.09 qw(check_uint8 check_uint32);
 
 extends 'Data::9P::Message';
 
@@ -24,11 +24,11 @@ sub BUILD {
 
 	# Check 'fid'.
 	check_required($self, 'fid');
-	check_natural_range($self, 'fid', 0, 4294967295);
+	check_uint32($self, 'fid');
 
 	# Check 'mode'.
 	check_required($self, 'mode');
-	check_natural_range($self, 'mode', 0, 255);
+	check_uint8($self, 'mode');
 
 	return;
 }

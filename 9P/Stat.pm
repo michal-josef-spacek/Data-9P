@@ -5,7 +5,7 @@ use warnings;
 
 use Mo qw(build is);
 use Mo::utils 0.08 qw(check_isa check_required);
-use Mo::utils::Number::Range 0.03 qw(check_natural_range);
+use Mo::utils::Number::Alias 0.09 qw(check_uint16 check_uint32 check_uint64);
 
 our $VERSION = 0.01;
 
@@ -58,11 +58,11 @@ sub BUILD {
 
 	# Check 'atime'.
 	check_required($self, 'atime');
-	check_natural_range($self, 'atime', 0, 4294967295);
+	check_uint32($self, 'atime');
 
 	# Check 'dev'.
 	check_required($self, 'dev');
-	check_natural_range($self, 'dev', 0, 4294967295);
+	check_uint32($self, 'dev');
 
 	# Check 'gid'.
 	check_required($self, 'gid');
@@ -70,15 +70,15 @@ sub BUILD {
 
 	# Check 'length'.
 	check_required($self, 'length');
-	check_natural_range($self, 'length', 0, 18446744073709551615);
+	check_uint64($self, 'length');
 
 	# Check 'mode'.
 	check_required($self, 'mode');
-	check_natural_range($self, 'mode', 0, 4294967295);
+	check_uint32($self, 'mode');
 
 	# Check 'mtime'.
 	check_required($self, 'mtime');
-	check_natural_range($self, 'mtime', 0, 4294967295);
+	check_uint32($self, 'mtime');
 
 	# Check 'muid',
 	check_required($self, 'muid');
@@ -94,7 +94,7 @@ sub BUILD {
 
 	# Check 'type'.
 	check_required($self, 'type');
-	check_natural_range($self, 'type', 0, 65535);
+	check_uint16($self, 'type');
 
 	# Check 'uid'.
 	check_required($self, 'uid');

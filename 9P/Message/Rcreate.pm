@@ -5,7 +5,7 @@ use warnings;
 
 use Mo qw(build is);
 use Mo::utils 0.08 qw(check_isa check_required);
-use Mo::utils::Number::Range 0.03 qw(check_natural_range);
+use Mo::utils::Number::Alias 0.09 qw(check_uint32);
 
 extends 'Data::9P::Message';
 
@@ -24,7 +24,7 @@ sub BUILD {
 
 	# Check 'iounit'.
 	check_required($self, 'iounit');
-	check_natural_range($self, 'iounit', 0, 4294967295);
+	check_uint32($self, 'iounit');
 
 	# Check 'qid'.
 	check_required($self, 'qid');

@@ -21,7 +21,7 @@ recursive_author_tests('xt');
 requires 'Mo' => 0;
 requires 'Mo::utils' => 0.08;
 requires 'Mo::utils::Array' => 0;
-requires 'Mo::utils::Number::Range' => 0.03;
+requires 'Mo::utils::Number::Alias' => 0.09;
 resources 'bugtracker' => 'https://github.com/michal-josef-spacek/Data-9P/issues';
 resources 'homepage' => 'https://github.com/michal-josef-spacek/Data-9P';
 resources 'repository' => 'git://github.com/michal-josef-spacek/Data-9P';

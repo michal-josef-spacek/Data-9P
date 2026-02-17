@@ -5,7 +5,7 @@ use warnings;
 
 use Mo qw(build is);
 use Mo::utils qw(check_required);
-use Mo::utils::Number::Range 0.03 qw(check_natural_range);
+use Mo::utils::Number::Alias 0.09 qw(check_uint8 check_uint32 check_uint64);
 
 our $VERSION = 0.01;
 
@@ -26,15 +26,15 @@ sub BUILD {
 
 	# Check 'path'.
 	check_required($self, 'path');
-	check_natural_range($self, 'path', 0, 18446744073709551615);
+	check_uint64($self, 'path');
 
 	# Check 'type'.
 	check_required($self, 'type');
-	check_natural_range($self, 'type', 0, 255);
+	check_uint8($self, 'type');
 
 	# Check 'version'.
 	check_required($self, 'version');
-	check_natural_range($self, 'version', 0, 4294967295);
+	check_uint32($self, 'version');
 
 	return;
 }

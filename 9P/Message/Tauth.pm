@@ -7,7 +7,7 @@ use Data::9P::Const qw($NOFID);
 use Error::Pure qw(err);
 use Mo qw(build is);
 use Mo::utils qw(check_required);
-use Mo::utils::Number::Range 0.03 qw(check_natural_range);
+use Mo::utils::Number::Alias 0.09 qw(check_uint32);
 
 extends 'Data::9P::Message';
 
@@ -30,7 +30,7 @@ sub BUILD {
 
 	# Check 'afid'.
 	check_required($self, 'afid');
-	check_natural_range($self, 'afid', 0, 4294967295);
+	check_uint32($self, 'afid');
 	if ($self->{'afid'} == $NOFID) {
 		err "Parameter 'afid' couldn't contain 0xFFFFFFFF value.";
 	}

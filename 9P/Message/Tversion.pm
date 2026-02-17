@@ -5,7 +5,7 @@ use warnings;
 
 use Mo qw(build is);
 use Mo::utils qw(check_required);
-use Mo::utils::Number::Range 0.03 qw(check_natural_range);
+use Mo::utils::Number::Alias 0.09 qw(check_uint32);
 
 extends 'Data::9P::Message';
 
@@ -24,7 +24,7 @@ sub BUILD {
 
 	# Check 'msize'.
 	check_required($self, 'msize');
-	check_natural_range($self, 'msize', 0, 4294967295);
+	check_uint32($self, 'msize');
 
 	# Check 'version'.
 	check_required($self, 'version');

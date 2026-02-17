@@ -5,7 +5,7 @@ use warnings;
 
 use Mo qw(build is);
 use Mo::utils qw(check_required);
-use Mo::utils::Number::Range 0.03 qw(check_natural_range);
+use Mo::utils::Number::Alias 0.09 qw(check_uint16);
 
 extends 'Data::9P::Message';
 
@@ -20,7 +20,7 @@ sub BUILD {
 
 	# Check 'oldtag'.
 	check_required($self, 'oldtag');
-	check_natural_range($self, 'oldtag', 0, 65535);
+	check_uint16($self, 'oldtag');
 
 	return;
 }
