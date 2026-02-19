@@ -5,6 +5,7 @@ use warnings;
 
 use Mo qw(build is);
 use Mo::utils qw(check_required);
+use Mo::utils::Binary qw(check_bytes_len);
 
 extends 'Data::9P::Message';
 
@@ -19,8 +20,7 @@ sub BUILD {
 
 	# Check 'ename'.
 	check_required($self, 'ename');
-	# TODO Check string maximum of bytes for string is 65533 bytes
-	# (2 bytes for length). Could be UTF-8 string.
+	check_bytes_len($self, 'ename', 65533);
 
 	return;
 }

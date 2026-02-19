@@ -5,6 +5,7 @@ use warnings;
 
 use Mo qw(build is);
 use Mo::utils qw(check_required);
+use Mo::utils::Binary qw(check_bytes_len);
 use Mo::utils::Number::Alias 0.09 qw(check_uint32);
 
 extends 'Data::9P::Message';
@@ -36,7 +37,7 @@ sub BUILD {
 
 	# Check 'aname'.
 	check_required($self, 'aname');
-	# TODO Check string, maximum 65535 bytes.
+	check_bytes_len($self, 'aname', 65533);
 
 	# Check 'fid'.
 	check_required($self, 'fid');
@@ -44,7 +45,7 @@ sub BUILD {
 
 	# Check 'uname'.
 	check_required($self, 'uname');
-	# TODO Check string, maximum 65535 bytes.
+	check_bytes_len($self, 'uname', 65533);
 
 	return;
 }
