@@ -20,6 +20,7 @@ sub BUILD {
 
 	# Check 'wqid'.
 	check_array_object($self, 'wqid', 'Data::9P::Qid');
+	# TODO Check count of items.
 
 	return;
 }
