@@ -27,7 +27,7 @@ no_index:
 requires:
   Mo: 0
   Mo::utils: 0.08
-  Mo::utils::Array: 0
+  Mo::utils::Array: 0.03
   Mo::utils::Binary: 0
   Mo::utils::Number::Alias: 0.09
   perl: 5.8.0

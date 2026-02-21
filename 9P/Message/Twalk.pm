@@ -5,7 +5,7 @@ use warnings;
 
 use Mo qw(build default is);
 use Mo::utils qw(check_required);
-use Mo::utils::Array qw(check_array);
+use Mo::utils::Array 0.03 qw(check_array_items);
 use Mo::utils::Number::Alias 0.09 qw(check_uint32);
 
 extends 'Data::9P::Message';
@@ -38,8 +38,7 @@ sub BUILD {
 
 	# Check 'wnames'.
 	check_required($self, 'wnames');
-	check_array($self, 'wnames');
-	# TODO Check maximum of items in wmnames (16)
+	check_array_items($self, 'wnames', 16);
 
 	return;
 }
