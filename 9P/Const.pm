@@ -8,7 +8,7 @@ use Readonly;
 
 Readonly::Array our @EXPORT_OK => qw(
 	$DMDIR $DMAPPEND $DMEXCL $DMMOUNT $DMAUTH $DMTMP
-	$NOFID
+	$NOFID $NOTAG
 	$OREAD $OWRITE $ORDWR $OEXEC $OTRUNC $ORCLOSE
 	$QTDIR $QTAPPEND $QTEXCL $QTMOUNT $QTAUTH $QTTMP $QTSYMLINK $QTFILE
 );
@@ -21,6 +21,7 @@ Readonly::Scalar our $DMAUTH => 0x08000000;
 Readonly::Scalar our $DMTMP => 0x04000000;
 
 Readonly::Scalar our $NOFID => 0xFFFFFFFF;
+Readonly::Scalar our $NOTAG => 0xFFFF;
 
 Readonly::Scalar our $OREAD => 0;
 Readonly::Scalar our $OWRITE => 1;

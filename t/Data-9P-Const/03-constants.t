@@ -3,11 +3,11 @@ use warnings;
 
 use Data::9P::Const qw(
 	$DMDIR $DMAPPEND $DMEXCL $DMMOUNT $DMAUTH $DMTMP
-	$NOFID
+	$NOFID $NOTAG
 	$OREAD $OWRITE $ORDWR $OEXEC $OTRUNC $ORCLOSE
 	$QTDIR $QTAPPEND $QTEXCL $QTMOUNT $QTAUTH $QTTMP $QTSYMLINK $QTFILE
 );
-use Test::More 'tests' => 22;
+use Test::More 'tests' => 23;
 use Test::NoWarnings;
 
 # Test.
@@ -20,6 +20,7 @@ is($DMTMP, 0x04000000, 'Constant $DMTMP (0x04000000).');
 
 # Test.
 is($NOFID, 0xFFFFFFFF, 'Constant $NOFID (0xFFFFFFF).');
+is($NOTAG, 0xFFFF, 'Constant $NOTAG (0xFFFF).');
 
 # Test.
 is($OREAD, 0, 'Constant $OREAD (0).');
